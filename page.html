@@ -6,15 +6,31 @@
     </head>
     <body>
         <header>About Me</header>
-        <a href="http://www.google.com">Introductorty Page</a>
+        <a href="#bio">Bio</a>
+        <a href="#contact">Contact</a>
         <h1>My name is Ralph Alpha</h1>
-        <main>
+        <main id="bio">
             <h2>Bio:</h2>
             <h3>CCE student, AI option</h3>
             <p>I took this course to learn more about the internet we visit everyday</p>
             <p>Hope to have a fruitfull journey</p>
         </main>
         <img src="gorilla.jpeg" alt="The beautiful handdrawn image of an immaculate gorilla">
+        
+        <form id="contact">
+            <h2>Contact me</h2>
+            <div>
+                <label for="name">Full name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">email adress</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <label for="message">message</label>
+            <textarea type="message" id="message" name="message" required></textarea>
+            <button>Submit</button>
+        </form>
         <footer>All rights reserved</footer>
     </body>
 </html>
